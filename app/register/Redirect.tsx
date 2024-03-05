@@ -4,6 +4,10 @@ import { useEffect } from "react";
 import { redirect } from "next/navigation";
 
 export function Redirect() {
+  useEffect(() => {
+    redirect("https://lu.ma/7atw9xr0");
+  }, []);
+
   return (
     <div className="flex flex-col items-center place-content-center w-full h-screen">
       <div
