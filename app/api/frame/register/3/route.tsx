@@ -10,13 +10,13 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
           action: "post",
         },
         {
+          label: ">>",
+          action: "post",
+        },
+        {
           action: "link",
           label: "Register",
           target: "https://lu.ma/7atw9xr0",
-        },
-        {
-          label: ">>",
-          action: "post",
         },
       ],
       image: {

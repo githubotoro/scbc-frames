@@ -1,7 +1,13 @@
-import { getFrameHtmlResponse } from "@coinbase/onchainkit/frame";
+import { FrameRequest, getFrameHtmlResponse } from "@coinbase/onchainkit/frame";
 import { NextRequest, NextResponse } from "next/server";
 
 async function getResponse(req: NextRequest): Promise<NextResponse> {
+  const body: FrameRequest = await req.json();
+
+  const buttonIndex: number = body.untrustedData.buttonIndex;
+
+  console.log(body);
+
   return new NextResponse(
     getFrameHtmlResponse({
       buttons: [

@@ -16,7 +16,7 @@ async function getResponse(req: NextRequest): Promise<NextResponse> {
             target: "https://lu.ma/7atw9xr0",
           },
           {
-            label: "Headline Speakers",
+            label: "Speakers →",
             action: "post",
           },
         ],
