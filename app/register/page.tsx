@@ -15,7 +15,9 @@ const frameMetadata = getFrameMetadata({
     },
   ],
   image: {
-    src: `${process.env.NEXT_PUBLIC_URL}/frame/register/1.png`,
+    src: `${
+      process.env.NEXT_PUBLIC_URL
+    }/frame/register/1.png?timestamp=${Date.now()}`,
     aspectRatio: "1:1",
   },
   postUrl: `${process.env.NEXT_PUBLIC_URL}/api/frame/register/1`,
